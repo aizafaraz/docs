@@ -18,26 +18,15 @@ hero:
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
 import AboutAstro from '../../components/about-astro.astro';
+import Cardme from '../../components/cards.astro';
 
 #### Welcome to Zen Browser's Documentation! Here, you'll find everything you need to get the most out of your browsing experience.  Dive in to explore how Zen can make your browsing more secure, private, and efficient.
 
 ---
 
 ---
-<CardGrid stagger>
-	<Card title="Guides" icon="pencil">
-		<h4>All the guides to make Zen an amazing experience!</h4>
-	</Card>
-	<Card title="Theme Store" icon="sun">
-		<h4>Customize your browser whit a theme?<br></br>Lets go!</h4>
-	</Card>
-	<Card title="Contributions" icon="rocket">
-		<h4>U know a bit of programin and have free time, come and join<br></br><text style="color:yellow">Lets make it amazing</text></h4>
-	</Card>
-	<Card title="FAQ" icon="open-book" style="height:fit-content;">
-		<h3>Stuck on something check the [FAQs](/more/faq/).</h3>
-	</Card>
-</CardGrid>
+
+<Cardme/>
 
 <AboutAstro title="Brought to you by">
 Zen team. ❤️

@@ -1,0 +1,98 @@
+---
+import { Icon } from "@astrojs/starlight/components";
+---
+
+<div class="maincard">
+    <div class="maincardsubb">
+        <div class="lecard">
+            <p class="title sl-flex"><Icon name="rocket" class="icon1" size="1.333em" /><span>Guides</span></p>
+            <p class="textt">All the guides to make Zen an amazing experience!</p>
+        </div>
+        <div class="lecard">
+            <p class="title sl-flex"><Icon name="rocket" class="icon2" size="1.333em" /><span>Guides</span></p>
+            <p class="textt">U know a bit of programing and have free time, come and join!<br>
+                Lets make it amazing</p>
+        </div>
+    </div>
+    <div class="maincardsubb2">
+        <div class="lecard">
+            <p class="title sl-flex"><Icon name="rocket" class="icon3" size="1.333em" /><span>Guides</span></p>
+            <p class="textt">Customize your browser whit a theme?<br>
+                Lets go!</p>
+        </div>
+        <div class="lecard">
+            <p class="title sl-flex"><Icon name="rocket" class="icon4" size="1.333em" /><span>Guides</span></p>
+            <p class="textt">Stuck on something check the <a href="/faq">FAQs</a>.</p>
+        </div>
+    </div>
+</div>
+
+<style>
+    .maincard {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .maincardsubb , .maincardsubb2 {
+        margin-top: 0 !important;
+        width: 100%;
+    }
+
+    .maincardsubb2 {
+        transform: translateY(50px);
+    }
+
+    .lecard {
+        --sl-card-border: var(--sl-color-purple);
+		--sl-card-bg: var(--sl-color-purple-low);
+        border-radius: 8px !important;
+		box-shadow:  0px 0px 2rem 0px var(--sl-color-gray-4);
+		border: 1px solid var(--sl-color-gray-4) !important;
+        padding: clamp(1rem,calc(0.125rem + 3vw),2.5rem);
+    }
+    .lecard .icon1 , .lecard .icon2, .lecard .icon3, .lecard .icon4 {
+        padding: 0.2em;
+		border-radius: 0.25rem;
+	}
+    .lecard .icon1 {
+        --sl-card-border: var(--sl-color-orange);
+		--sl-card-bg: var(--sl-color-orange-low);
+        border: 1px solid var(--sl-card-border);
+        background-color: var(--sl-card-bg);
+    }
+    .lecard .icon2 {
+        --sl-card-border: var(--sl-color-green);
+		--sl-card-bg: var(--sl-color-green-low);
+        border: 1px solid var(--sl-card-border);
+        background-color: var(--sl-card-bg);
+    }
+    .lecard .icon3 {
+        --sl-card-border: var(--sl-color-red);
+		--sl-card-bg: var(--sl-color-red-low);
+        border: 1px solid var(--sl-card-border);
+        background-color: var(--sl-card-bg);
+    }
+    .lecard .icon4 {
+        --sl-card-border: var(--sl-color-blue);
+		--sl-card-bg: var(--sl-color-blue-low);
+        border: 1px solid var(--sl-card-border);
+        background-color: var(--sl-card-bg);
+    }
+    .title {
+		font-weight: 600;
+		font-size: x-large;
+		color: var(--sl-color-white);
+		line-height: var(--sl-line-height-headings);
+		gap: 1rem;
+		align-items: center;
+	}
+
+    .textt {
+        font-size: large;
+        color: white;
+    }
+    </style>

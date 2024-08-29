@@ -10,8 +10,8 @@ export default defineConfig({
 			logo: {
 				src: './src/assets/my-logo.svg',
 				replacesTitle: true,
-			  },
-			  plugins: [starlightViewModes()],
+			},
+			plugins: [starlightViewModes()],
 			social: {
 				github: 'https://github.com/zen-browser',
 				discord: 'https://discord.com/invite/nnShMQzR4b',
@@ -19,15 +19,15 @@ export default defineConfig({
 			},
 			editLink: {
 				baseUrl: 'https://github.com/zen-browser/docs/edit/docs-astro/',
-			  },
+			},
 			customCss: [
 				// Relative path to your custom CSS file
 				'./src/styles/custom.css',
-			  ],
+			],
 			sidebar: [
-     { slug: 'faq' },
-     { slug: 'benchmark'},
-     { slug: 'building'},
+				{ slug: 'faq' },
+				{ slug: 'benchmarks' },
+				{ slug: 'building' },
 				{
 					label: 'Guides',
 					/* items: [
