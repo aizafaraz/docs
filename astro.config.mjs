@@ -29,6 +29,7 @@ export default defineConfig({
 					label: 'Info',
 					autogenerate: { directory: 'more' },
 				},
+     { slug: 'more/faq' },
 				{
 					label: 'Guides',
 					/* items: [
