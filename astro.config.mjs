@@ -25,11 +25,9 @@ export default defineConfig({
 				'./src/styles/custom.css',
 			  ],
 			sidebar: [
-				{
-					label: 'Info',
-					autogenerate: { directory: 'more' },
-				},
      { slug: 'faq' },
+     { slug: 'benchmark'},
+     { slug: 'building'},
 				{
 					label: 'Guides',
 					/* items: [
