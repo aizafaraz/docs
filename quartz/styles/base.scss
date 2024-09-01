@@ -86,7 +86,7 @@ a {
     line-height: 1.4rem;
 
     &:has(> img) {
-      background-color: none;
+      background-color: transparent;
       border-radius: 0;
       padding: 0;
     }
@@ -284,7 +284,7 @@ h6,
 thead {
   font-family: var(--headerFont);
   color: var(--dark);
-  font-weight: revert;
+  font-weight: 400px;
   margin-bottom: 0;
 
   article > & > a[role="anchor"] {
@@ -344,7 +344,6 @@ figure[data-rehype-pretty-code-figure] {
   margin: 0;
   position: relative;
   line-height: 1.6rem;
-  position: relative;
 
   & > [data-rehype-pretty-code-title] {
     font-family: var(--codeFont);
@@ -506,7 +505,7 @@ div:has(> .overflow) {
 
 ul.overflow,
 ol.overflow {
-  max-height: 400;
+  max-height: 400px;
   overflow-y: auto;
 
   // clearfix
